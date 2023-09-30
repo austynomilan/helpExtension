@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '/HelpMeOut.png';
 
-export default function nav() {
+export default function nav({ closeExtention }) {
   return (
     <div class='flex justify-around items-center mt-10'>
       <img src={Logo} alt='' />
@@ -32,6 +32,7 @@ export default function nav() {
           stroke-width='1.5'
           stroke='currentColor'
           class='w-6 h-6 text-primary-100'
+          onClick={closeExtention}
         >
           <path
             stroke-linecap='round'
